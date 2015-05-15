@@ -30,32 +30,19 @@ $(function() {
       }
    });
 
+   $(window).scroll(function() {
 
-});
+      var wScroll = $(this).scrollTop();
 
+      $('.logo').css({
+         'transform': 'translate(0px, ' + wScroll / 9 + '%)'
+      });
+      $('.bunny').css({
+         'transform': 'translate(0px, ' + wScroll / 12 + '%)'
+      });
 
-$(window).scroll(function() {
-
-   var wScroll = $(this).scrollTop();
-
-   $('.logo').css({
-      'transform': 'translate(0px, ' + wScroll / 9 + '%)'
-   });
-   $('.bunny').css({
-      'transform': 'translate(0px, ' + wScroll / 12 + '%)'
-         // 'transform' : 'scale()'
-   }).css({
-      // 'transform' : 'scale(' + -wScroll /100 +')'
    });
 
-   // if ($(window).width() > 960){
-   //    $('.parallax').css({
-   //    'transform' : 'translate(0px, '+ -wScroll /30 +'%)'
-   // });
-   //          $('.parallax-1').css({
-   //    'transform' : 'translate(0px, '+ -wScroll /70 +'%)'
-   // });
-   // };
 
 
 });
