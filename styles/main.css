@@ -5530,7 +5530,7 @@ Welcome
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 2px; }
-  #header button {
+  #header .btn {
     padding: 20px 30px;
     font-size: 14px;
     font-weight: 500;
@@ -5540,7 +5540,7 @@ Welcome
     border: 2px solid rgba(255, 255, 255, 0.8);
     color: rgba(255, 255, 255, 0.8);
     transition: all 0.3s ease-in-out; }
-    #header button:hover {
+    #header .btn:hover {
       background-color: rgba(255, 255, 255, 0.8);
       box-shadow: 0 2px 5px #222;
       color: #777; }
